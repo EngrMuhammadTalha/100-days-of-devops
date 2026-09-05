@@ -5,19 +5,19 @@
 ## Steps
 
 Connect to App Server 3:
-\`\`\`bash
+
 ssh banner@stapp03
 sudo su -
-\`\`\`
+
 
 Create the user with an expiry date:
-\`\`\`bash
+
 useradd -e 2026-12-07 kareem
-\`\`\`
+
 
 Verify the expiry date is set correctly:
-\`\`\`bash
+
 chage -l kareem
-\`\`\`
+
 
 This ensures the account is automatically disabled after the specified date — useful for temporary access.
