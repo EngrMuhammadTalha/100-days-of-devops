@@ -7,6 +7,9 @@
 Connect to App Server 3:
 
 ssh banner@stapp03
+
+Switch to root:
+
 sudo su -
 
 
