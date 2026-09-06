@@ -6,21 +6,27 @@
 
 Connect to App Server 1:
 
+```bash
 ssh tony@stapp01
-
 sudo su -
-
+```
 
 Check current permissions:
 
+```bash
 ls -l /tmp/xfusioncorp.sh
+```
 
 Grant execute permission to owner, group, and others:
 
+```bash
 chmod 755 /tmp/xfusioncorp.sh
+```
 
 Verify:
 
+```bash
 ls -l /tmp/xfusioncorp.sh
+```
 
-`755` means the owner can read/write/execute, while group and others can read/execute — satisfying "all users can execute it."
+**Result:** `755` gives the owner read/write/execute, and group/others read/execute — satisfying the requirement that all users can execute the script.
